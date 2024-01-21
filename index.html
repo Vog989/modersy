@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modersy</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <script type="module" src="js/index.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__top-bar">
+            <div class="header__logo-container">
+                <a class="header__logo" href="#">
+                    <img src="images/logo-modersy.png">
+                </a>
+            </div>
+            <div class="header__contact-container">
+                <div class="header__location">
+                    <span class="header__icon header__icon--location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.3283 14.4353 9.65339 14.3097 9.95671C14.1841 10.26 13.9999 10.5356 13.7678 10.7678C13.5356 10.9999 13.26 11.1841 12.9567 11.3097C12.6534 11.4353 12.3283 11.5 12 11.5ZM12 2C10.1435 2 8.36301 2.7375 7.05025 4.05025C5.7375 5.36301 5 7.14348 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 7.14348 18.2625 5.36301 16.9497 4.05025C15.637 2.7375 13.8565 2 12 2Z"
+                                  fill="#3A3A3A"/>
+                        </svg>
+                    </span>
+                    <a href="https://www.google.com/maps">
+                        <p class="header__text">Calgary, Alberta, at Bay #10, 6125 11 St SE</p>
+                    </a>
+                </div>
+                <div class="header__email">
+                    <span class="header__icon header__icon--email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M20 4.5H4C2.9 4.5 2 5.4 2 6.5V18.5C2 19.6 2.9 20.5 4 20.5H20C21.1 20.5 22 19.6 22 18.5V6.5C22 5.4 21.1 4.5 20 4.5ZM19.6 8.75L13.06 12.84C12.41 13.25 11.59 13.25 10.94 12.84L4.4 8.75C4.29973 8.69371 4.21192 8.61766 4.14189 8.52645C4.07186 8.43525 4.02106 8.33078 3.99258 8.21937C3.96409 8.10796 3.9585 7.99194 3.97616 7.87831C3.99381 7.76468 4.03434 7.65581 4.09528 7.5583C4.15623 7.46079 4.23632 7.37666 4.33073 7.311C4.42513 7.24533 4.53187 7.19951 4.6445 7.1763C4.75712 7.15309 4.87328 7.15297 4.98595 7.17595C5.09863 7.19893 5.20546 7.24453 5.3 7.31L12 11.5L18.7 7.31C18.7945 7.24453 18.9014 7.19893 19.014 7.17595C19.1267 7.15297 19.2429 7.15309 19.3555 7.1763C19.4681 7.19951 19.5749 7.24533 19.6693 7.311C19.7637 7.37666 19.8438 7.46079 19.9047 7.5583C19.9657 7.65581 20.0062 7.76468 20.0238 7.87831C20.0415 7.99194 20.0359 8.10796 20.0074 8.21937C19.9789 8.33078 19.9281 8.43525 19.8581 8.52645C19.7881 8.61766 19.7003 8.69371 19.6 8.75Z"
+                                  fill="#3A3A3A"/>
+                        </svg>
+                    </span>
+                    <a href="mailto:https://mail.google.com/">
+                        <p class="header__text">reception@modersy.ca</p>
+                    </a>
+                </div>
+                <div class="header__phone">
+                    <span class="header__icon header__icon--phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4.77999 15.2699L7.32 14.9799C7.93 14.9099 8.52998 15.1199 8.95998 15.5499L10.8 17.3899C13.63 15.9499 15.95 13.6399 17.39 10.7999L15.54 8.94992C15.3273 8.73736 15.1654 8.47944 15.0667 8.19536C14.968 7.91131 14.9349 7.60858 14.97 7.30992L15.26 4.78992C15.38 3.77992 16.23 3.01992 17.25 3.01992H18.98C20.11 3.01992 21.05 3.95992 20.98 5.08992C20.45 13.6299 13.62 20.4499 5.09 20.9799C3.96 21.0499 3.02 20.1099 3.02 18.9799V17.2499C3.01 16.2399 3.76999 15.3899 4.77999 15.2699Z"
+                                  fill="#3A3A3A"/>
+                        </svg>
+                    </span>
+                    <a href="tel:+14037647667" class="header__phone--text">403-764-7667</a>
+                </div>
+                <div class="header__actions">
+                    <button type="submit" class="header__search-button">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <button class="header__call-to-action">Book A Call</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<div class="menu-nav">
+    <div class="container">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                <li class="menu__item menu__item--dropdown">
+                    <a href="#" class="menu__link">Residential</a>
+                    <!-- Dropdown menu content -->
+                    <ul class="menu__dropdown">
+                        <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Residential Option 1</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Residential Option 2</a>
+                        </li>
+                        <!-- More items -->
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--dropdown"><a href="#" class="menu__link">Commercial</a>
+                    <!-- Dropdown menu content -->
+                    <ul class="menu__dropdown">
+                        <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Commercial Option 1</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Commercial Option 2</a>
+                        </li>
+                        <!-- More items -->
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--dropdown"><a href="#" class="menu__link">Hardware & Accessories</a>
+                    <!-- Dropdown menu content -->
+                    <ul class="menu__dropdown">
+                        <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Hardware & Accessories
+                            Option 1</a></li>
+                        <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Hardware & Accessories
+                            Option 2</a></li>
+                        <!-- More items -->
+                    </ul>
+                </li>
+                <li class="menu__item menu__item--dropdown">
+                    <a href="#" class="menu__link">MultiFamily</a>
+                    <!-- Dropdown menu content -->
+                    <ul class="menu__dropdown">
+                        <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">MultiFamily Option 1</a>
+                        </li>
+                        <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">MultiFamily Option 2</a>
+                        </li>
+                        <!-- More items -->
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">Design</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Gallery</a></li>
+            </ul>
+            <li class="menu__item menu__item--dropdown">
+                <a href="#" class="menu__link">About us</a>
+                <!-- Dropdown menu content -->
+                <ul class="menu__dropdown">
+                    <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">About us Option 1</a></li>
+                    <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">About us Option 2</a></li>
+                    <!-- More items -->
+                </ul>
+            </li>
+            <li class="menu__item menu__item--dropdown">
+                <a href="#" class="menu__link">Resources</a>
+                <!-- Dropdown menu content -->
+                <ul class="menu__dropdown">
+                    <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Resources Option 1</a></li>
+                    <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Resources Option 2</a></li>
+                    <!-- More items -->
+                </ul>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
+        </nav>
+    </div>
+</div>
+<section class="home">
+    <div class="container">
+        <div class="home__content">
+            <h1 class="home__big-title">Welcome to Modersy Interior: Your Prime Source for Custom Cabinetry &
+                Millwork</h1>
+            <button class="home__call-to-action">Book A Call</button>
+            <p class="home__description">
+                Modersy Interior is your go-to hub for high-quality, tailor-made millwork and cabinetry solutions. We
+                proudly serve residential and commercial clients, providing top-notch products uniquely designed to fit
+                their needs. Our skilled professionals are dedicated to exceeding your expectations by delivering
+                remarkable results that reflect your individuality.
+            </p>
+            <div class="home__background-image"></div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <div class="about__image-container">
+            <img src="images/kitchen-white.jpg" alt="Kitchen by Modersy Interior" class="about__image">
+        </div>
+        <div class="class__content">
+            <h2 class="about__title">About Modersy Interior</h2>
+            <div class="about__text-block">
+                <h3 class="about__subtitle">Our Location</h3>
+                <p class="about__text">Nestled in the heart of Calgary, Alberta, at Bay #10, 6125 11 St SE, Modersy
+                    Interior has been the epitome of quality custom millwork and cabinetry solutions across Alberta for
+                    over three years.</p>
+            </div>
+            <div class="about__text-block">
+                <h3 class="about__subtitle">Our Experience</h3>
+                <p class="about__text">Our team is a fusion of talent with over 15 years of combined experience in the
+                    industry, ensuring unparalleled craftsmanship and excellent customer service that sets us apart.</p>
+            </div>
+            <div class="about__text-block">
+                <h3 class="about__subtitle">Premium Materials</h3>
+                <p class="about__text">At Modersy Interior, we believe in perfection. That's why we meticulously select
+                    premium materials to create stunning designs that stand the test of time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="residential">
+    <div class="container">
+        <div class="residential__list">
+            <h2 class="residential__title">Residential</h2>
+            <ul class="residential__items">
+                <li class="residential__residential residential__items--active"><a class="residential__link" href="#">Kitchen
+                    Cabinets</a></li>
+                <li class="residential__residential"><a class="residential__link" href="#">Bath Cabinets</a></li>
+                <li class="residential__residential"><a class="residential__link" href="#">Living Room Cabinets</a></li>
+                <li class="residential__residential"><a class="residential__link" href="#">Credenza</a></li>
+                <li class="residential__residential"><a class="residential__link" href="#">Pantry Closets</a></li>
+                <li class="residential__residential"><a class="residential__link" href="#">Home Office Cabinets</a></li>
+                <li class="residential__residential"><a class="residential__link" href="#">Laundry & Mudroom
+                    Cabinets</a></li>
+                <li class="residential__residential"><a class="residential__link" href="#">Wine Cabinets</a></li>
+                <li class="residential__residential"><a class="residential__link" href="#">Bar Cabinets</a></li>
+            </ul>
+            <div class="residential__image-container">
+                <img src="#" alt="Bathroom" class="residential__image">
+                <p class="residential__image-description">Our custom bathroom vanities are designed to complement your
+                    bathroom style and meet your storage needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="commercial">
+    <div class="container">
+        <div class="commercial__content">
+            <h2 class="commercial__title">Commercial</h2>
+            <ul class="commercial__list">
+                <li class="commercial__item commercial__item--active"><a class="commercial__link" href="#">Medical
+                    Projects</a></li>
+                <li class="commercial__item"><a class="commercial__link" href="#">Office Projects</a></li>
+                <li class="commercial__item"><a class="commercial__link" href="#">Banking Projects</a></li>
+                <li class="commercial__item"><a class="commercial__link" href="#">Retail Projects</a></li>
+                <li class="commercial__item"><a class="commercial__link" href="#">Coffee House, Bar & Restaurant
+                    Projects</a></li>
+            </ul>
+            <div class="commercial__image-container">
+                <img src="#" alt="Bathroom" class="commercial__image">
+                <p class="commercial__image-description">This is where the text about Medical Projects will be located.
+                    This is where the text about Medical Projects will be located</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hardware">
+    <div class="container">
+        <h2 class="hardware__title">Hardware & Accessories</h2>
+        <!--            <p class="hardware__description">Enhance your technology with Modersy's top-notch hardware and accessories. Elevate your devices to new heights with our cutting-edge products designed to maximize performance and user experience. From powerful processors to sleek peripherals, we offer a diverse selection of premium items that cater to your specific needs.</p>-->
+
+        <div class="hardware__items">
+            <div class="hardware__item">
+                <img src="#" alt="Decorative Hardware" class="hardware__image">
+                <h3 class="hardware__item-title">Decorative Hardware</h3>
+            </div>
+            <div class="hardware__item">
+                <img src="#" alt="Range Hood Covers" class="hardware__image">
+                <h3 class="hardware__item-title">Range Hood Covers</h3>
+            </div>
+            <div class="hardware__item">
+                <img src="#" alt="Cabinet Glass & Aluminium Profile" class="hardware__image">
+                <h3 class="hardware__item-title">Cabinet Glass & Aluminium Profile</h3>
+            </div>
+            <div class="hardware__item">
+                <img src="#" alt="Kitchen & Closet Accessories" class="hardware__image">
+                <h3 class="hardware__item-title">Kitchen & Closet Accessories</h3>
+            </div>
+            <div class="hardware__item">
+                <img src="#" alt="Hinges" class="hardware__image">
+                <h3 class="hardware__item-title">Hinges</h3>
+            </div>
+            <div class="hardware__item">
+                <img src="#" alt="Drawer Box Systems" class="hardware__image">
+                <h3 class="hardware__item-title">Drawer Box Systems</h3>
+            </div>
+            <div class="hardware__item">
+                <img src="#" alt="Countertop Selection" class="hardware__image">
+                <h3 class="hardware__item-title">Countertop Selection</h3>
+            </div>
+            <div class="hardware__item">
+                <img src="#" alt="Sink & Faucets Selection" class="hardware__image">
+                <h3 class="hardware__item-title">Sink & Faucets Selection</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio">
+    <div class="container">
+        <div class="portfolio__content">
+            <h2 class="portfolio_title">Portfolio</h2>
+            <p class="Portfolio__description">Modersy Interior takes immense pride in the quality of our work. Over the
+                past three years, we've completed nearly 100 projects throughout Alberta, ranging from small residential
+                endeavors to large commercial installations. Our portfolio is a testament to our attention to detail and
+                commitment to quality in every project we undertake.</p>
+        </div>
+        <div class="portfolio__gallery">
+            <button class="portfolio__gallery-button portfolio__gallery-button--prev"
+                    aria-label="Previous image"></button>
+            <div class="portfolio__gallery-images">
+                <!-- Images would be dynamically inserted here, typically in a slider component -->
+            </div>
+            <button class="portfolio__gallery-button portfolio__gallery-button--next" aria-label="Next image"></button>
+        </div>
+        <div class="portfolio__call-to-action">
+            <p class="portfolio__call-to-action-text">Want to see more pictures? Explore our gallery!</p>
+            <button class="portfolio__call-to-action">View Gallery</button>
+        </div>
+    </div>
+</section>
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonials__characterization">
+            <h2 class="testimonials__title">Testimonials</h2>
+            <p class="testimonials__description">
+                Our clients are our top priority. We aim to give them the best experience possible. We're happy to share
+                feedback from happy clients who have used our services. Their positive reviews highlight the high
+                quality of our work and our dedication to excellent results.
+            </p>
+        </div>
+        <div class="testimonials-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="testimonials__list">
+                        <div class="testimonial">
+                            <div class="testimonial__footer">
+                                <span class="testimonial__author">Irina Dumitriu</span>
+                            </div>
+                            <div class="testimonial__header">
+                                <span class="testimonial__avatar"></span>
+                                <div class="testimonial__rating">★★★★★</div>
+                            </div>
+                            <div class="testimonial__body">
+                                <p class="testimonial__text">
+                                    We just now completed our projects (Master dresser, mud room, island, wood range
+                                    hood) with Modersy Interior and are 100% satisfied with the work they've done for
+                                    us, as well as pricing.Very professional team, oriented to details, attentive to
+                                    customer's needs, and above all - Quality!Thank you!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials__list">
+                        <div class="testimonial">
+                            <div class="testimonial__footer">
+                                <span class="testimonial__author">Luca Ricioppo</span>
+                            </div>
+                            <div class="testimonial__header">
+                                <span class="testimonial__avatar"></span>
+                                <div class="testimonial__rating">★★★★★</div>
+                            </div>
+                            <div class="testimonial__body">
+                                <p class="testimonial__text">
+                                    Friendly ,helpful ,Excellent quality and most importantly very affordable. Took them
+                                    less than a week from order to delivery. Would definitely recommend them to anyone
+                                    who needs a kitchen layout.They will help you every step of the way making sure you
+                                    are satisfied until your project is complete.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials__list">
+                        <div class="testimonial">
+                            <div class="testimonial__footer">
+                                <span class="testimonial__author">Vlada Lungu</span>
+                            </div>
+                            <div class="testimonial__header">
+                                <span class="testimonial__avatar"></span>
+                                <div class="testimonial__rating">★★★★★</div>
+                            </div>
+                            <div class="testimonial__body">
+                                <p class="testimonial__text">
+                                    Modersy helped Us with our (whole) master bedroom and bathroom project. Starting
+                                    with the design and ending with the installation, they were responsive, helpful and
+                                    professional at all the stages. We highly recommend Modersy Interior to anyone who
+                                    is looking to build/renovate their home!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials__list">
+                        <div class="testimonial">
+                            <div class="testimonial__footer">
+                                <span class="testimonial__author">Anghelina Spatari</span>
+                            </div>
+                            <div class="testimonial__header">
+                                <span class="testimonial__avatar"></span>
+                                <div class="testimonial__rating">★★★★★</div>
+                            </div>
+                            <div class="testimonial__body">
+                                <p class="testimonial__text">
+                                    Modersy helped Us with our (whole) master bedroom and bathroom project. Starting
+                                    with the design and ending with the installation, they were responsive, helpful and
+                                    professional at all the stages. We highly recommend Modersy Interior to anyone who
+                                    is looking to build/renovate their home!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials__list">
+                        <div class="testimonial">
+                            <div class="testimonial__footer">
+                                <span class="testimonial__author">Sergiu Petrari</span>
+                            </div>
+                            <div class="testimonial__header">
+                                <span class="testimonial__avatar"></span>
+                                <div class="testimonial__rating">★★★★★</div>
+                            </div>
+                            <div class="testimonial__body">
+                                <p class="testimonial__text">
+                                    Modersy helped Us with our (whole) master bedroom and bathroom project. Starting
+                                    with the design and ending with the installation, they were responsive, helpful and
+                                    professional at all the stages. We highly recommend Modersy Interior to anyone who
+                                    is looking to build/renovate their home!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog">
+    <div class="container">
+        <div class="blog__header">
+            <h2 class="blog__title">Blog</h2>
+            <p class="blog__intro">Looking for ideas and advice on custom millwork and cabinetry design? Visit our blog!
+                It's filled with articles on the latest design trends, storage optimization tips, case studies, and much
+                more. Keep an eye on our blog for regular updates and helpful insights.</p>
+        </div>
+        <div class="blog__articles">
+            <article class="blog__article">
+                <img class="blog__image" src="path-to-article-image.jpg" alt="Article image description">
+                <p class="blog__author">Curtis Donovan</p>
+                <p class="blog__date">May 2023</p>
+                <a class="blog__link" href="#">
+                    <h3 class="blog__article-title">Mastering the Art of Home Restoration: Essential Tips for a
+                        Successful
+                        Renovation</h3>
+                    <p class="blog__summary">Essential Tips for a Successful Renovation" Are you ready to embark on a
+                        journey of transforming your home into a masterpiece? This article...</p>
+                </a>
+            </article>
+            <article class="blog__article">
+                <img class="blog__image" src="path-to-article-image.jpg" alt="Article image description">
+                <p class="blog__author">Simon Bellamy</p>
+                <p class="blog__date">May 2023</p>
+                <a class="blog__link" href="#">
+                    <h3 class="blog__article-title">Revamp Your Space: Top Trends in Interior Design and Renovation</h3>
+                    <p class="blog__summary">Are you eager to revamp your living space and create an environment that
+                        reflects your unique style and personality? Look no further! In this article, we delve into the
+                        top
+                        trends in interior design and renovation...</p>
+                </a>
+            </article>
+            <article class="blog__article">
+                <img class="blog__image" src="path-to-article-image.jpg" alt="Article image description">
+                <p class="blog__author">Curtis Donovan</p>
+                <p class="blog__date">June 2023</p>
+                <a class="blog__link" href="#">
+                    <h3 class="blog__article-title">Timeless Elegance Underfoot: The Beauty and Benefits of Wood
+                        Flooring in
+                        Renovations</h3>
+                    <p class="blog__summary">When it comes to renovating your home, few elements can bring warmth,
+                        beauty,
+                        and a touch of timeless elegance quite like wood flooring. Whether you're...</p>
+                </a>
+            </article>
+            <article class="blog__article">
+                <img class="blog__image" src="path-to-article-image.jpg" alt="Article image description">
+                <p class="blog__author">Curtis Donovan</p>
+                <p class="blog__date">May 2023</p>
+                <a class="blog__link" href="#">
+                    <h3 class="blog__article-title">Mastering the Art of Home Restoration: Essential Tips for a
+                        Successful
+                        Renovation</h3>
+                    <p class="blog__summary">Essential Tips for a Successful Renovation" Are you ready to embark on a
+                        journey of transforming your home into a masterpiece? This article...</p>
+                </a>
+            </article>
+        </div>
+        <div class="blog__footer">
+            <div class="blog__call-to-action"></div>
+            <p class="blog__call-to-action-text">Want to read more interesting articles? Welcome to our blog!</p>
+            <button class="blog__call-to-action">Read More Articles</button>
+        </div>
+    </div>
+
+</section>
+<section class="faq">
+    <div class="container">
+        <h2 class="faq__title">Frequently Asked Questions</h2>
+        <div class="faq__block">
+            <h3 class="faq__questions">Where is Modersy Interior located?</h3>
+            <p class="faq__answer">Modersy Interior is at Bay #10, 6125 11 St SE, Calgary, AB T2H 2L6.</p>
+        </div>
+        <div class="faq__block">
+            <h3 class="faq__questions">Where can I see some of Modersy Interior's work?</h3>
+            <p class="faq__answer">You can check out our portfolio, which showcases some of our most recent projects
+                across Alberta. We take pride in our work and pay attention to every detail in every project.</p>
+        </div>
+        <div class="faq__block">
+            <h3 class="faq__questions">How can I contact Modersy Interior?</h3>
+            <p class="faq__answer">You can reach us at reception@modersy.ca or by calling +14037647667.</p>
+        </div>
+        <div class="faq__block">
+            <h3 class="faq__questions">Does Modersy Interior have experience in the industry?</h3>
+            <p class="faq__answer">Our team has over 15 years of combined experience in the millwork and cabinetry
+                industry.</p>
+        </div>
+        <div class="faq__block">
+            <h3 class="faq__questions">What services does Modersy Interior provide?</h3>
+            <p class="faq__answer">Modersy Interior provides custom millwork and cabinetry services for residential and
+                commercial clients. Our services range from kitchen cabinetry, bathroom vanities, and bedroom closets
+                for residential spaces to custom solutions for offices, retail stores, schools, and medical
+                facilities.</p>
+        </div>
+    </div>
+</section>
+<section class="contact">
+    <div class="container">
+        <div class="contact-form">
+            <div class="contact-form__description">
+                <h2 class="contact-form__title">Get in Touch With Us</h2>
+                <p class="contact-form__outline">Thanks for thinking of Modersy Interior for your custom millwork and
+                    cabinetry. We're excited about the chance to work with you and create something that fits your
+                    specific needs and goes beyond what you expect. Get in touch with us now to set up a consultation
+                    and begin your project!</p>
+            </div>
+            <form action="submit-form-url" method="POST" class="contact-form__form">
+                <div class="contact-form__field">
+                    <input type="text" id="full-name" name="full_name" required placeholder="Full Name*"
+                           class="contact-form__input">
+                </div>
+                <div class="contact-form__field">
+                    <input type="email" id="email" name="email" required placeholder="Email*"
+                           class="contact-form__input">
+                </div>
+                <div class="contact-form__field">
+                    <input type="tel" id="phone-number" name="phone_number" required placeholder="Phone Number*"
+                           class="contact-form__input">
+                </div>
+                <div class="contact-form__field">
+                    <textarea id="message" name="message" placeholder="Your Message"
+                              class="contact-form__textarea"></textarea>
+                </div>
+                <div class="contact-form__actions">
+                    <button type="submit" class="contact-form__submit">Send Data</button>
+                    <div class="contact-form__captcha">
+                        <!-- Placeholder for captcha integration -->
+                        <label>
+                            <input type="checkbox" name="captcha" required>
+                            I'm not a robot
+                        </label>
+                        <img src="captcha-image-url" alt="Captcha">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.015149206579!2d-114.04109323772518!3d50.997392197714554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371708c4f244f13%3A0x4660345551df7b35!2zNjEyNSAxMSBTdCBTRSwgQ2FsZ2FyeSwgQUIgVDJIIDJMNiwg0JrQsNC90LDQtNCw!5e0!3m2!1sru!2s!4v1702997388636!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="footer__section footer__section-residential">
+            <h4 class="footer__title">Residential</h4>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="link-to-kitchen-cabinets" class="footer__link">Kitchen Cabinets</a>
+                </li>
+                <li class="footer__item"><a href="link-to-bath-cabinets" class="footer__link">Bath Cabinets</a></li>
+                <li class="footer__item"><a href="link-to-living-room-cabinets" class="footer__link">Living Room
+                    Cabinets</a></li>
+                <li class="footer__item"><a href="link-to-credenza" class="footer__link">Credenza</a></li>
+                <li class="footer__item"><a href="link-to-pantry-closets" class="footer__link">Pantry Closets</a></li>
+                <li class="footer__item"><a href="link-to-home-office-cabinets" class="footer__link">Home Office
+                    Cabinets</a></li>
+                <li class="footer__item"><a href="link-to-laundry-&-mudroom-cabinets" class="footer__link">Laundry &
+                    Mudroom Cabinets</a></li>
+                <li class="footer__item"><a href="link-to-wine-cabinets" class="footer__link">Wine Cabinets</a></li>
+                <li class="footer__item"><a href="link-to-bar-cabinets" class="footer__link">Bar Cabinets</a></li>
+            </ul>
+        </div>
+        <div class="footer__section footer__section-commercial">
+            <h4 class="footer__title">Commercial</h4>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="link-to-medical-projects" class="footer__link">Medical Projects</a>
+                </li>
+                <li class="footer__item"><a href="link-to-office-projects" class="footer__link">Office Projects</a></li>
+                <li class="footer__item"><a href="link-to-banking-projects" class="footer__link">Banking Projects</a>
+                </li>
+                <li class="footer__item"><a href="link-to-retail-projects" class="footer__link">Retail Projects</a></li>
+                <li class="footer__item"><a href="link-to-coffee-house-bar-&-restaurant-projects" class="footer__link">Coffee
+                    House, Bar & Restaurant Projects</a></li>
+            </ul>
+        </div>
+        <div class="footer__section footer__section-hardware-&-accessories">
+            <h4 class="footer__title">Hardware & Accessories</h4>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="link-to-decorative-hardware" class="footer__link">Decorative
+                    Hardware</a></li>
+                <li class="footer__item"><a href="link-to-range-hood-covers" class="footer__link">Range Hood Covers</a>
+                </li>
+                <li class="footer__item"><a href="link-to-cabinet-glass-&-aluminium-profile" class="footer__link">Cabinet
+                    Glass & Aluminium Profile</a></li>
+                <li class="footer__item"><a href="link-to-kitchen-&-closet-accessories" class="footer__link">Kitchen &
+                    Closet Accessories</a></li>
+                <li class="footer__item"><a href="link-to-hinges" class="footer__link">Hinges</a></li>
+                <li class="footer__item"><a href="link-to-drawer-box-systems" class="footer__link">Drawer Box
+                    Systems</a></li>
+                <li class="footer__item"><a href="link-to-countertop-selection" class="footer__link">Countertop
+                    Selection</a></li>
+                <li class="footer__item"><a href="link-to-sink-&-faucets-selection" class="footer__link">Sink & Faucets
+                    Selection</a></li>
+            </ul>
+        </div>
+        <div class="footer__section footer__section-style-&-types-of-cabinets">
+            <h4 class="footer__title"><a href="hardware-&-accessories" class="footer__title">Style & Types of
+                Cabinets</a></h4>
+        </div>
+        <div class="footer__section footer__section-multiFamily">
+            <h4 class="footer__title"><a href="multifamily" class="footer__title">MultiFamily</a></h4>
+        </div>
+        <div class="footer__section footer__section-design">
+            <h4 class="footer__title"><a href="design" class="footer__title">Design</a></h4>
+        </div>
+        <div class="footer__section footer__section-gallery">
+            <h4 class="footer__title"><a href="gallery" class="footer__title">Gallery</a></h4>
+        </div>
+        <div class="footer__section footer__section-about-us">
+            <h4 class="footer__title">About Us</h4>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="link-to-privacy-policy" class="footer__link">Privacy Policy</a></li>
+                <li class="footer__item"><a href="link-to-terms-of-use" class="footer__link">Terms of Use</a></li>
+            </ul>
+        </div>
+        <div class="footer__section footer__section-resources">
+            <h4 class="footer__title">Resources</h4>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="link-to-blog" class="footer__link">Blog</a></li>
+                <li class="footer__item"><a href="link-to-faq" class="footer__link">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer__section footer__section-contact-us">
+            <h4 class="footer__title"><a href="contact-us" class="footer__title">Contact Us</a></h4>
+        </div>
+        <div class="footer__section footer__section-contacts">
+            <h4 class="footer__title footer__title-contacts">Contacts</h4>
+            <div class="footer__contact-info contacts-info">
+                <!--                <h3 class="contacts-info__tilte">Contacts</h3>-->
+                <ul class="contacts-info__list">
+                    <li class="contacts-info__item contacts-info__item--location">
+                        <svg class="contact-info__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                             viewBox="0 0 24 24" fill="none">
+                            <path d="M12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.3283 14.4353 9.65339 14.3097 9.95671C14.1841 10.26 13.9999 10.5356 13.7678 10.7678C13.5356 10.9999 13.26 11.1841 12.9567 11.3097C12.6534 11.4353 12.3283 11.5 12 11.5ZM12 2C10.1435 2 8.36301 2.7375 7.05025 4.05025C5.7375 5.36301 5 7.14348 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 7.14348 18.2625 5.36301 16.9497 4.05025C15.637 2.7375 13.8565 2 12 2Z"
+                                  fill="#3A3A3A"/>
+                        </svg>
+                        <a href="https://maps.app.goo.gl/wXAGKaGXAFXWFRJ97" class="contacts-info__link">Calgary,
+                            Alberta, at Bay #10, 6125 11 St SE</a>
+                    </li>
+                    <li class="contacts-info__item contacts-info__item--hours">
+                        <svg class="contact-info__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                             viewBox="0 0 24 25" fill="none">
+                            <g clip-path="url(#clip0_1084_494)">
+                                <path d="M12 2.5C17.523 2.5 22 6.977 22 12.5C22 18.023 17.523 22.5 12 22.5C6.477 22.5 2 18.023 2 12.5C2 6.977 6.477 2.5 12 2.5ZM12 6.5C11.7348 6.5 11.4804 6.60536 11.2929 6.79289C11.1054 6.98043 11 7.23478 11 7.5V12.5C11.0001 12.7652 11.1055 13.0195 11.293 13.207L14.293 16.207C14.4816 16.3892 14.7342 16.49 14.9964 16.4877C15.2586 16.4854 15.5094 16.3802 15.6948 16.1948C15.8802 16.0094 15.9854 15.7586 15.9877 15.4964C15.99 15.2342 15.8892 14.9816 15.707 14.793L13 12.086V7.5C13 7.23478 12.8946 6.98043 12.7071 6.79289C12.5196 6.60536 12.2652 6.5 12 6.5Z"
+                                      fill="#3A3A3A"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1084_494">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="contacts-info__text">Monday – Friday 9am – 6pm</span>
+                    </li>
+                    <li class="contacts-info__item contacts-info__item--email">
+                        <svg class="contact-info__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                             viewBox="0 0 24 25" fill="none">
+                            <path d="M20 4.5H4C2.9 4.5 2 5.4 2 6.5V18.5C2 19.6 2.9 20.5 4 20.5H20C21.1 20.5 22 19.6 22 18.5V6.5C22 5.4 21.1 4.5 20 4.5ZM19.6 8.75L13.06 12.84C12.41 13.25 11.59 13.25 10.94 12.84L4.4 8.75C4.29973 8.69371 4.21192 8.61766 4.14189 8.52645C4.07186 8.43525 4.02106 8.33078 3.99258 8.21937C3.96409 8.10796 3.9585 7.99194 3.97616 7.87831C3.99381 7.76468 4.03434 7.65581 4.09528 7.5583C4.15623 7.46079 4.23632 7.37666 4.33073 7.311C4.42513 7.24533 4.53187 7.19951 4.6445 7.1763C4.75712 7.15309 4.87328 7.15297 4.98595 7.17595C5.09863 7.19893 5.20546 7.24453 5.3 7.31L12 11.5L18.7 7.31C18.7945 7.24453 18.9014 7.19893 19.014 7.17595C19.1267 7.15297 19.2429 7.15309 19.3555 7.1763C19.4681 7.19951 19.5749 7.24533 19.6693 7.311C19.7637 7.37666 19.8438 7.46079 19.9047 7.5583C19.9657 7.65581 20.0062 7.76468 20.0238 7.87831C20.0415 7.99194 20.0359 8.10796 20.0074 8.21937C19.9789 8.33078 19.9281 8.43525 19.8581 8.52645C19.7881 8.61766 19.7003 8.69371 19.6 8.75Z"
+                                  fill="#3A3A3A"/>
+                        </svg>
+                        <a href="mailto:https://mail.google.com/" class="contacts-info__link">reception@modersy.ca</a>
+                    </li>
+                    <li class="contacts-info__item contacts-info__item--phone">
+                        <svg class="contact-info__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                             viewBox="0 0 24 24" fill="none">
+                            <path d="M4.77999 15.2695L7.32 14.9795C7.93 14.9095 8.52998 15.1195 8.95998 15.5495L10.8 17.3895C13.63 15.9495 15.95 13.6395 17.39 10.7995L15.54 8.94953C15.3273 8.73697 15.1654 8.47905 15.0667 8.19497C14.968 7.91092 14.9349 7.60819 14.97 7.30953L15.26 4.78953C15.38 3.77953 16.23 3.01953 17.25 3.01953H18.98C20.11 3.01953 21.05 3.95953 20.98 5.08953C20.45 13.6295 13.62 20.4495 5.09 20.9795C3.96 21.0495 3.02 20.1095 3.02 18.9795V17.2495C3.01 16.2395 3.76999 15.3895 4.77999 15.2695Z"
+                                  fill="#3A3A3A"/>
+                        </svg>
+                        <a href="tel:+14037647667" class="contacts-info__link">403-764-7667</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__section footer-social-media">
+            <h3 class="footer-social-media__title">Social Media</h3>
+            <div class="footer-social-media__links">
+                <a class="footer-social-media__link " href="https://www.youtube.com" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                        <path d="M9.66655 12.5007L15.7216 9.00068L9.66655 5.50068V12.5007ZM23.1532 3.36568C23.3048 3.91398 23.4099 4.64898 23.4799 5.58228C23.5616 6.51569 23.5966 7.32069 23.5966 8.02069L23.6666 9.00068C23.6666 11.5557 23.4799 13.434 23.1532 14.6357C22.8616 15.6857 22.1849 16.3623 21.1349 16.654C20.5866 16.8057 19.5833 16.9107 18.0433 16.9807C16.5266 17.0623 15.1383 17.0973 13.8549 17.0973L11.9999 17.1673C7.11155 17.1673 4.06655 16.9807 2.86485 16.654C1.81485 16.3623 1.13825 15.6857 0.846552 14.6357C0.694852 14.0873 0.589853 13.3523 0.519853 12.419C0.438253 11.4857 0.403253 10.6807 0.403253 9.98068L0.333252 9.00068C0.333252 6.44568 0.519852 4.56728 0.846552 3.36568C1.13825 2.31568 1.81485 1.63898 2.86485 1.34728C3.41325 1.19568 4.41655 1.09069 5.95655 1.02069C7.47325 0.938985 8.86155 0.903984 10.1449 0.903984L11.9999 0.833984C16.8883 0.833984 19.9333 1.02068 21.1349 1.34728C22.1849 1.63898 22.8616 2.31568 23.1532 3.36568Z"
+                              fill="#3A3A3A"/>
+                    </svg>
+                </a>
+                <a class="footer-social-media__link " href="https://www.facebook.com" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11.9999 0.379883C5.58325 0.379883 0.333252 5.61818 0.333252 12.0699C0.333252 17.9032 4.60325 22.7449 10.1799 23.6199V15.4532H7.21655V12.0699H10.1799V9.49148C10.1799 6.56318 11.9183 4.95318 14.5899 4.95318C15.8616 4.95318 17.1916 5.17488 17.1916 5.17488V8.05648H15.7216C14.2749 8.05648 13.8199 8.95488 13.8199 9.87648V12.0699H17.0633L16.5383 15.4532H13.8199V23.6199C16.5691 23.1857 19.0725 21.783 20.8782 19.665C22.6838 17.5469 23.6728 14.8531 23.6666 12.0699C23.6666 5.61818 18.4166 0.379883 11.9999 0.379883Z"
+                              fill="#3A3A3A"/>
+                    </svg>
+                </a>
+                <a class="footer-social-media__link " href="https://www.instagram.com" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M13.028 2.00123C13.7577 1.99843 14.4874 2.00576 15.217 2.02323L15.411 2.03023C15.635 2.03823 15.856 2.04823 16.123 2.06023C17.187 2.11023 17.913 2.27823 18.55 2.52523C19.21 2.77923 19.766 3.12323 20.322 3.67923C20.8303 4.17884 21.2238 4.78318 21.475 5.45023C21.722 6.08723 21.89 6.81423 21.94 7.87823C21.952 8.14423 21.962 8.36623 21.97 8.59023L21.976 8.78423C21.9937 9.51342 22.0014 10.2428 21.999 10.9722L22 11.7182V13.0282C22.0024 13.758 21.9948 14.4877 21.977 15.2172L21.971 15.4112C21.963 15.6352 21.953 15.8562 21.941 16.1232C21.891 17.1872 21.721 17.9132 21.475 18.5502C21.2246 19.218 20.8311 19.8228 20.322 20.3222C19.8219 20.8306 19.2173 21.224 18.55 21.4752C17.913 21.7222 17.187 21.8902 16.123 21.9402C15.856 21.9522 15.635 21.9622 15.411 21.9702L15.217 21.9762C14.4874 21.994 13.7577 22.0017 13.028 21.9992L12.282 22.0002H10.973C10.2432 22.0027 9.51349 21.995 8.78397 21.9772L8.58997 21.9712C8.35258 21.9626 8.11524 21.9526 7.87797 21.9412C6.81397 21.8912 6.08797 21.7212 5.44997 21.4752C4.78265 21.2246 4.1782 20.8311 3.67897 20.3222C3.17001 19.8225 2.77619 19.2178 2.52497 18.5502C2.27797 17.9132 2.10997 17.1872 2.05997 16.1232C2.04883 15.8859 2.03883 15.6486 2.02997 15.4112L2.02497 15.2172C2.00653 14.4877 1.9982 13.758 1.99997 13.0282V10.9722C1.99718 10.2428 2.00451 9.51343 2.02197 8.78423L2.02897 8.59023C2.03697 8.36623 2.04697 8.14423 2.05897 7.87823C2.10897 6.81323 2.27697 6.08823 2.52397 5.45023C2.77534 4.78285 3.16993 4.17868 3.67997 3.68023C4.17886 3.17098 4.78293 2.7768 5.44997 2.52523C6.08797 2.27823 6.81297 2.11023 7.87797 2.06023L8.58997 2.03023L8.78397 2.02523C9.51315 2.0068 10.2426 1.99847 10.972 2.00023L13.028 2.00123ZM12 7.00123C11.3375 6.99186 10.6797 7.11425 10.0649 7.3613C9.45016 7.60834 8.89061 7.97511 8.41881 8.44029C7.94701 8.90546 7.57237 9.45977 7.31665 10.071C7.06094 10.6822 6.92926 11.3382 6.92926 12.0007C6.92926 12.6633 7.06094 13.3192 7.31665 13.9305C7.57237 14.5417 7.94701 15.096 8.41881 15.5612C8.89061 16.0264 9.45016 16.3931 10.0649 16.6402C10.6797 16.8872 11.3375 17.0096 12 17.0002C13.326 17.0002 14.5978 16.4734 15.5355 15.5358C16.4732 14.5981 17 13.3263 17 12.0002C17 10.6741 16.4732 9.40238 15.5355 8.4647C14.5978 7.52701 13.326 7.00123 12 7.00123ZM12 9.00123C12.3985 8.99389 12.7944 9.06603 13.1648 9.21344C13.5351 9.36085 13.8723 9.58057 14.1567 9.85978C14.4412 10.139 14.6671 10.4721 14.8214 10.8396C14.9757 11.2071 15.0552 11.6016 15.0552 12.0002C15.0553 12.3988 14.9759 12.7934 14.8218 13.1609C14.6677 13.5285 14.4418 13.8617 14.1575 14.141C13.8731 14.4203 13.536 14.6401 13.1657 14.7876C12.7954 14.9352 12.3995 15.0074 12.001 15.0002C11.2053 15.0002 10.4423 14.6842 9.87965 14.1216C9.31704 13.5589 9.00097 12.7959 9.00097 12.0002C9.00097 11.2046 9.31704 10.4415 9.87965 9.87891C10.4423 9.3163 11.2053 9.00023 12.001 9.00023L12 9.00123ZM17.25 5.50123C16.9274 5.51414 16.6223 5.65138 16.3986 5.8842C16.1749 6.11702 16.05 6.42736 16.05 6.75023C16.05 7.0731 16.1749 7.38344 16.3986 7.61626C16.6223 7.84908 16.9274 7.98632 17.25 7.99923C17.5815 7.99923 17.8994 7.86753 18.1339 7.63311C18.3683 7.39869 18.5 7.08075 18.5 6.74923C18.5 6.41771 18.3683 6.09977 18.1339 5.86535C17.8994 5.63093 17.5815 5.49923 17.25 5.49923V5.50123Z"
+                              fill="#3A3A3A"/>
+                    </svg>
+                </a>
+                <a class="footer-social-media__link" href="https://www.twitter.com" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                        <path d="M20.5312 0.0625H3.4688C2.7148 0.0633 1.9919 0.363199 1.4588 0.896299C0.9257 1.4294 0.6258 2.1523 0.625 2.9062V15.0938C0.6258 15.8477 0.9257 16.5706 1.4588 17.1037C1.9919 17.6368 2.7148 17.9367 3.4688 17.9375H20.5312C21.2852 17.9367 22.0081 17.6368 22.5412 17.1037C23.0743 16.5706 23.3742 15.8477 23.375 15.0938V2.9062C23.3742 2.1523 23.0743 1.4294 22.5412 0.896299C22.0081 0.363199 21.2852 0.0633 20.5312 0.0625ZM19.8112 4.7664L12.4987 10.4539C12.3561 10.5647 12.1806 10.6249 12 10.6249C11.8194 10.6249 11.6439 10.5647 11.5013 10.4539L4.1888 4.7664C4.1029 4.7015 4.0307 4.6202 3.9765 4.5272C3.9223 4.4342 3.8871 4.3313 3.873 4.2246C3.8589 4.1178 3.8661 4.0094 3.8943 3.9054C3.9224 3.8015 3.971 3.7043 4.037 3.6193C4.1031 3.5343 4.1854 3.4633 4.2792 3.4103C4.373 3.3574 4.4763 3.3237 4.5832 3.3111C4.6902 3.2985 4.7985 3.3072 4.902 3.3368C5.0055 3.3665 5.1021 3.4164 5.1862 3.4836L12 8.7832L18.8138 3.4836C18.9842 3.355 19.1984 3.2985 19.4101 3.3265C19.6217 3.3545 19.8139 3.4647 19.9449 3.6333C20.076 3.8019 20.1354 4.0152 20.1104 4.2273C20.0853 4.4393 19.9779 4.633 19.8112 4.7664Z"
+                              fill="#3A3A3A"/>
+                    </svg>
+                </a>
+                <a class="footer-social-media__link " href="https://www.pinterest.com" aria-label="Pinterest">
+                    <svg class="footer-social-media__icon footer-social-media__icon--pinterest"
+                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_1084_529)">
+                            <path d="M19.527 4.79902C20.739 7.40702 20.464 10.477 19.122 12.972C18.021 15.019 16.378 16.712 15.024 18.586C14.405 19.444 13.78 20.336 13.3549 21.313C13.214 21.638 13.092 21.971 12.972 22.305C12.851 22.638 12.748 22.978 12.632 23.313C12.523 23.627 12.396 23.997 12.005 24H11.998C11.532 23.999 11.419 23.47 11.303 23.113C11.019 22.239 10.722 21.4 10.284 20.588C9.77395 19.644 9.13895 18.771 8.49395 17.917L19.527 4.79902ZM8.54495 7.70502L4.58595 12.412C5.30995 13.952 6.40695 15.275 7.45695 16.592C7.70395 16.902 7.95095 17.214 8.19395 17.528L13.178 11.603L13.149 11.613C11.408 12.214 9.45795 11.322 8.75695 9.62602C8.66106 9.3958 8.59097 9.15567 8.54795 8.91002C8.48495 8.47302 8.47095 8.14902 8.54395 7.71202L8.54495 7.70502ZM5.49195 3.14902L5.48895 3.15302C3.54195 5.61902 3.20795 9.03302 4.37195 11.923L9.15695 6.23402L9.09895 6.18402L5.49195 3.14902ZM14.661 0.436016L10.8229 4.99902C10.8318 4.99525 10.8408 4.99191 10.85 4.98902C12.45 4.43802 14.2529 5.13902 15.07 6.61502C15.2459 6.93402 15.393 7.29802 15.4469 7.66002C15.5149 8.10602 15.5319 8.43302 15.459 8.88002L15.456 8.89602L19.292 4.33502C18.2895 2.50666 16.6416 1.11759 14.67 0.439016L14.661 0.436016ZM9.46595 5.86802L14.162 0.285016L14.115 0.273016C13.4201 0.0903618 12.7044 -0.00140351 11.986 1.62239e-05C10.8226 0.010913 9.67398 0.262254 8.61236 0.738253C7.55074 1.21425 6.59901 1.90463 5.81695 2.76602L5.80095 2.78402L9.46595 5.86802Z"
+                                  fill="#3A3A3A"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1084_529">
+                                <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__ltd">
+            <div class="ltd-container ltd-privacy">
+                <img src="#" alt="Modersy Interior logo" class="ltd-privacy__img">
+            </div>
+            <div class="ltd">
+                <p class="ltd__footer__copyright">Modersy Interior LTD. © 2023</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
